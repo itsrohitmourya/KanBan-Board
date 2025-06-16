@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>KanBan Board</title>
 </head>
+
 <body>
     <nav id="navbar">
         <h1>KanBan Board</h1>
     </nav>
     <section id="board-panel">
-        <div class="boards" id="todo">Todo's</div>
-        <div class="boards" id="progress">In Progress</div>
-        <div class="boards" id="completed">Completed</div>
+        <div class="boards" id="todo">
+            <span>
+                Todo's
+            </span>
+            <button id="addTodoBtn">add todo +</button>
+        </div>
+        <div class="boards" id="progress">
+            <span>
+                In Progress
+            </span>
+        </div>
+        <div class="boards" id="completed">
+            <span>
+                Completed
+            </span>
+        </div>
     </section>
+    <div id="todoForm" class="hidden">
+        <input type="text" placeholder="add todo here" autofocus>
+        <button>add</button>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
